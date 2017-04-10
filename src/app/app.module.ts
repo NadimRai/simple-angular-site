@@ -5,18 +5,26 @@ import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './navbar/navbar.component';
-import { PageComponent } from './page/page.component';
+
+import { AboutComponent } from './page/about.component';
+import { HomeComponent } from './page/home.component';
+import {routing} from './app.routing';
+import { ServerComponent } from './server/server.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
-    PageComponent
+    
+    AboutComponent,
+    HomeComponent,
+    ServerComponent
   ],
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [],
   bootstrap: [AppComponent]
